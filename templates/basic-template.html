@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Modal example</title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-select.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <link href="assets/css/nav.css" rel="stylesheet">
+    <title>Compare Messages Tool</title>
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/c3.css" rel="stylesheet">
+    <link href="/assets/css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="http://i.icomoon.io/public/b82cee61ad/standardIconSet/style.css">
+    <link href="/assets/css/custom.css" rel="stylesheet">
+    <script type="text/javascript" src="/assets/js/d3.min.js"></script>
+    <script type="text/javascript" src="/assets/js/c3.min.js"></script>
 </head>
 
-<body class="resellerDemo">
+<body class="hackathon">
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
@@ -28,8 +30,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logos/logo.svg" width="28" height="32" alt="VerticalReaponse" />
-                    <!--<img src="assets/img/logos/deluxe-logo.svg"  width="41" height="32" alt=""/>-->
+                    <img src="/assets/img/logos/logo.svg" width="28" height="32" alt="VerticalReaponse" />
+                    <!--<img src="/assets/img/logos/deluxe-logo.svg"  width="41" height="32" alt=""/>-->
                 </a>
             </div>
             <div class="navbar-collapse collapse" id="resellerNav">
@@ -75,6 +77,8 @@
                             </li>
                         </ul>
                     </li>
+
+
                     <!-- AlertIcon -->
                     <li class="alertNav dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -111,6 +115,11 @@
                         </ul>
                     </li>
                     <!-- /AlertsIcon -->
+
+
+
+
+
                     <!-- helpIcon -->
                     <li class="helpNav dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -170,82 +179,91 @@
 
 
     <div class="container">
-
         <div class="row">
             <div class="col-xs-12">
-                <img src="assets/img/message-bg.png" class="img-responsive sampleBg" width="1302" height="894" alt="" />
+                <h1>Page title</h1>
             </div>
         </div>
         <!-- /row -->
-
+        <div class="row">
+            <div class="col-sm-6">
+                select email dropdown
+            </div>
+            <div class="col-sm-6">
+                select email drop down
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div style="background: #eeeeee; display:block; padding: 100px 20px; margin: 20px 0px; text-align: center;">Big Ass Graph, son</div>
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-sm-6">
+                message details
+            </div>
+            <div class="col-sm-6">
+                message details
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-sm-6">
+                <h5>Graph Column</h5>
+                <div class="row">
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                </div><!-- /inner row -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                </div><!-- /inner row -->
+            </div><!-- /col-sm-6 -->
+            <div class="col-sm-6">
+                <h5>Graph Column</h5>
+                <div class="row">
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                </div><!-- /inner row -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                </div><!-- /inner row -->
+            </div><!-- /col-sm-6 -->
+        </div>
+        <!-- /row -->
+         <div class="row">
+            <div class="col-sm-6">
+                Summary
+            </div>
+            <div class="col-sm-6">
+                Summary
+            </div>
+        </div>
+        <!-- /row -->
     </div>
     <!-- /.container -->
 
-
-    <!-- Modal -->
-    <div class="modal fade" id="arCreate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        <svg version="1.1" id="Layer_1_copy_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
-                            <style type="text/css">
-                            .closeCircle {
-                                /*fill:#4B0F65;*/
-                                fill: #540F72;
-                            }
-                            .closeX {
-                                fill: #FFFFFF;
-                            }
-                            </style>
-                            <g>
-                                <path class="closeCircle" d="M13,0C5.8,0,0,5.8,0,13s5.8,13,13,13s13-5.8,13-13S20.2,0,13,0z" />
-                                <g>
-                                    <g>
-                                        <path class="closeX" d="M17.2,6.5l2.3,2.3L15.3,13l4.2,4.2l-2.3,2.3L13,15.3l-4.2,4.2l-2.3-2.3l4.2-4.2L6.5,8.8l2.3-2.3l4.2,4.2
-        L17.2,6.5z" />
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel">Customer Support</h4>
-                </div>
-                <!-- /modal-header -->
-                <div class="modal-body specialPicker">
-                    <div class="art">
-                        <i class="icon-list"></i>
-                    </div>
-                    <div class="content">
-                        <p>Send to people who join the
-                            <br />following list:</p>
-                        <select class="selectpicker show-tick">
-                            <option value="list1">New Customers</option>
-                            <option value="list2">Spring Sale</option>
-                            <option value="list3">Brick &amp; Mortar Rockstars</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-link cancel" data-dismiss="modal">Cancel</button>
-                    <a href="ar-success.html" class="btn-primaryAction">Schedule Email</a>
-                </div>
-                <!-- /modal-footer -->
-
-            </div>
-        </div>
-    </div>
-
-    <script src="assets/js/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap-select.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('#arCreate').modal('show');
-        $('.selectpicker').selectpicker();
-    });
-    </script>
-
+    <script src="/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
