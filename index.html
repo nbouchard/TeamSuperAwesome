@@ -14,6 +14,7 @@
     <link href="assets/css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="http://i.icomoon.io/public/b82cee61ad/standardIconSet/style.css">
     <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/donut_graphs.css" rel="stylesheet">
     <script type="text/javascript" src="assets/js/d3.min.js"></script>
     <script type="text/javascript" src="assets/js/c3.min.js"></script>
 </head>
@@ -186,17 +187,17 @@
         </div>
         <!-- /row -->
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 email1">
                 select email dropdown
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 email2">
                 select email drop down
             </div>
         </div>
         <!-- /row -->
         <div class="row">
             <div class="col-xs-12">
-                <div style="background: #eeeeee; display:block; padding: 100px 20px; margin: 20px 0px; text-align: center;">Big Ass Graph, son</div>
+                <div id="comparisonGraph"></div>
             </div>
         </div>
         <!-- /row -->
@@ -210,6 +211,8 @@
                 
                 <h5 class="dataCategory"><i class="icon-list-ul"></i> List</h5>
                 <p class="dataContent">Bluth Family &amp; Friends <span class="listSize">(35 Contacts)</span></p>
+            <div class="col-sm-6 email1">
+                message details
             </div>
             <div class="col-sm-6">
                 <h5 class="dataCategory"><i class="icon-envelope"></i> Message</h5>
@@ -220,45 +223,49 @@
                 
                 <h5 class="dataCategory"><i class="icon-list-ul"></i> List</h5>
                 <p class="dataContent">Bluth Family &amp; Friends <span class="listSize">(35 Contacts)</span></p>
+            <div class="col-sm-6 email2">
+                message details
             </div>
         </div>
         <!-- /row -->
         <div class="row graphsRow">
             <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-6 email1">
                 <h5>Graph Column</h5>
                 <div class="row">
-                    <div class="col-sm-6">
-                        Graph
+                    <div class="col-sm-6 donut_graph">
+                        <svg id="donut_opens_1"></svg>
                     </div>
-                    <div class="col-sm-6">
-                        Graph
+                    <div class="col-sm-6 donut_graph">
+                       <svg id="donut_clicks_1"></svg> 
                     </div>
                 </div><!-- /inner row -->
                 <div class="row">
-                    <div class="col-sm-6">
-                        Graph
+                    <div class="col-sm-6 donut_graph">
+                        <svg id="donut_bounces_1"></svg> 
                     </div>
-                    <div class="col-sm-6">
-                        Graph
+                    <div class="col-sm-6 donut_graph">
+                        <svg id="donut_unsub_1"></svg> 
                     </div>
                 </div><!-- /inner row -->
             </div><!-- /col-sm-6 -->
-            <div class="col-sm-6">
+            <div class="col-sm-6 email2">
                 <h5>Graph Column</h5>
                 <div class="row">
-                    <div class="col-sm-6">
-                        Graph
+                    <div class="col-sm-6 donut_graph">
+                        <svg id="donut_opens_2"></svg> 
                     </div>
-                    <div class="col-sm-6">
-                        Graph
+                    <div class="col-sm-6 donut_graph">
+                       <svg id="donut_clicks_2"></svg> 
                     </div>
                 </div><!-- /inner row -->
                 <div class="row">
-                    <div class="col-sm-6">
-                        Graph
+                    <div class="col-sm-6 donut_graph">
+                        <svg id="donut_bounces_2"></svg> 
                     </div>
-                    <div class="col-sm-6">
-                        Graph
+                    <div class="col-sm-6 donut_graph">
+                        <svg id="donut_unsub_2"></svg> 
                     </div>
                 </div><!-- /inner row -->
             </div><!-- /col-sm-6 -->
@@ -269,11 +276,15 @@
                 <h5 class="dataCategory"><i class="icon-stats"></i> Summary</h5>
                 <p class="dataContent">It looks like 50% of your contacts didn’t open your message. We recommend that you create a list of non-responders and send them a follow up message in a few days.</p>
                 <a href="#" class="btn-primaryAction"><i class="icon-list-ul"></i> Create List</a>
+            <div class="col-sm-6 email1">
+                Summary
             </div>
             <div class="col-sm-6 summary">
                 <h5 class="dataCategory"><i class="icon-stats"></i> Summary</h5>
                 <p class="dataContent">Great Job! It looks like you have a high open rate. At the same time, it looks like you don’t have a lot of clicks. You might want to have better calls to action in your message.</p>
                 <a href="#" class="btn-primaryAction"><i class="icon-lightbulb-o"></i> Learn More</a>
+            <div class="col-sm-6 email2">
+                Summary
             </div>
         </div>
         <!-- /row -->
@@ -282,6 +293,9 @@
 
     <script src="assets/js/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/graphs/comparison_graph.js"></script>
+    <script src="assets/js/graphs/donut_graphs.js"></script>
 </body>
 
 </html>

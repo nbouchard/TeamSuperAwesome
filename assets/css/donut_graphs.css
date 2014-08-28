@@ -1,0 +1,18 @@
+.donut_graph svg {
+    /*border: 1px solid black;*/
+    width: 260px;
+    height: 260px;
+
+}
+
+.donut_graph .circle{
+    fill: #dfdfdf;
+}
+
+.email1 .donut_graph .arc{
+    fill: #e421f9;
+}
+
+.email2 .donut_graph .arc{
+    fill: #23b0f7;
+}
