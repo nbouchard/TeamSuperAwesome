@@ -191,10 +191,14 @@
         <!-- /row -->
         <div class="row">
             <div class="col-sm-6 email1">
-                select email dropdown
+                <select class="select-message" data-column="0">
+                    <option value=""></option>
+                </select>
             </div>
             <div class="col-sm-6 email2">
-                select email drop down
+                <select class="select-message" data-column="1">
+                    <option value=""></option>
+                </select>
             </div>
         </div>
         <!-- /row -->
@@ -210,14 +214,13 @@
                     <div class="col-xs-12">
                         <img src="assets/img/message-std.png" class="pull-right messageThumbnail" width="84px" height="125px" />
                         <h5 class="dataCategory"><i class="icon-envelope"></i> Message</h5>
-                        <p class="dataContent">This is the message name Bob Law Law</p>
+                        <p class="dataContent dataMessageName"></p>
 
                         <h5 class="dataCategory"><i class="icon-bullhorn"></i> Subject Line</h5>
-                        <p class="dataContent">"Michael, There's always money in the bannana stand"</p>
+                        <p class="dataContent dataMessageSubject"></p>
 
                         <h5 class="dataCategory"><i class="icon-list-ul"></i> List</h5>
-                        <p class="dataContent">Bluth Family &amp; Friends
-                            <span class="listSize">(35 Contacts)</span>
+                        <p class="dataContent dataMessageLists">
                         </p>
                     </div>
                     <!-- /col-12 -->
@@ -260,14 +263,13 @@
                     <div class="col-xs-12">
                         <img src="assets/img/message-reminder.png" class="pull-right messageThumbnail" width="84px" height="125px" />
                         <h5 class="dataCategory"><i class="icon-envelope"></i> Message</h5>
-                        <p class="dataContent">This is the message name Bob Law Law</p>
+                        <p class="dataContent dataMessageName"></p>
 
                         <h5 class="dataCategory"><i class="icon-bullhorn"></i> Subject Line</h5>
-                        <p class="dataContent">"Michael, There's always money in the bannana stand"</p>
+                        <p class="dataContent dataMessageSubject"></p>
 
                         <h5 class="dataCategory"><i class="icon-list-ul"></i> List</h5>
-                        <p class="dataContent">Bluth Family &amp; Friends
-                            <span class="listSize">(35 Contacts)</span>
+                        <p class="dataContent dataMessageLists">
                         </p>
                     </div>
                     <!-- /col-12 -->
@@ -314,12 +316,13 @@
         <!-- /row -->
     </div>
     <!-- /.container -->
-
+    
     <script src="assets/js/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
     <script src="assets/js/graphs/comparison_graph.js"></script>
     <script src="assets/js/graphs/donut_graphs.js"></script>
+    <script src="assets/js/lodash.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
