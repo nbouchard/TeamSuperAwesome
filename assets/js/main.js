@@ -1,6 +1,7 @@
 $(function() {
   var email_data = [{}, {}], // Array of objects (columns) which graphs pull email data from
       root_url = "http://localhost:8000",
+      allOpenStats = [],
       API = {
         CLIENT_ID: "uuty35eu3mfsbqtdc63p7233",
         CLIENT_SECRET: "JPCquFKDbT2P7unmXg9K37jn",
@@ -86,6 +87,14 @@ $(function() {
       updateDonut('bounces', parseInt(column) + 1, stats.bounces, stats.bounce_rate, stats.reach);
       updateDonut('unsub', parseInt(column) + 1, stats.unsubscribes, stats.unsubscribe_rate, stats.reach);
     });
+
+    fetchOpenStats(selectedMessageId, function (openStats){
+      allOpenStats.push(openStats);
+      console.log('adding stats', openStats);
+      if (allOpenStats.length === 2) {
+        updateGraph();
+      }
+    });
   });
 
   function fetchStats (emailId, callback) {
@@ -103,6 +112,33 @@ $(function() {
         callback(data.items.map(function (list) {
           return list.attributes;
         }));
+      });
+  }
+
+  function fetchOpenStats (emailId, callback) {
+    var openstats_url = API.STATS_URL + emailId + '/stats/opens?access_token=' + API.ACCESS_TOKEN;
+    $.get(openstats_url)
+      .done(function (data) {
+        callback(
+          _.chain(data.items)
+            .map(function (item) {
+              return item.attributes.opened_at.slice(0, 10);
+            })
+            .groupBy(_.identity)
+            .map(function (values, key) {
+              return {
+                freq: values.length,
+                value: key
+              }
+            })
+            .sortBy(function (d) {
+              return d.value;
+            })
+            .map(function (i) {
+              return i.freq;
+            })
+            .value()
+        );
       });
   }
 
@@ -148,6 +184,48 @@ $(function() {
           .attr("text-anchor", "middle")
           .style({'fill':'rgb(126, 126, 126)' , 'font-size':'12px', 'font-family': 'Arial'})
           .text(value + "/" + reach);
+  }
+
+  function updateGraph () {
+    console.log(allOpenStats);
+    var data1 = allOpenStats[0].unshift('data1');
+    var data2 = allOpenStats[1].unshift('data2');
+    var comparisonGraph = c3.generate({
+        bindto: '#comparisonGraph',
+        color: { pattern: ['#e421f9', '#23b0f7' ] },
+        data: {
+            names: {
+                data1: 'Email 1',
+                data2: 'Email 2'
+            },
+            columns: [
+                allOpenStats[0],
+                allOpenStats[1]
+            ],
+            types: {
+                data1: 'area-spline',
+                data2: 'area-spline'
+            }
+        },
+        axis: {
+            x: {
+                label: {
+                    text: 'per Day',
+                    position: 'outer-center'
+                }
+            },
+            y: {
+                label: {
+                    text: 'Opens',
+                    position: 'outer-middle'
+                }
+            }
+        },
+        tooltip: {
+            grouped: false
+        }
+    });
+
   }
 
 });
