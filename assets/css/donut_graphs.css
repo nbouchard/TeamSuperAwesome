@@ -1,8 +1,5 @@
-.donut_graph svg {
-    /*border: 1px solid black;*/
-    width: 260px;
-    height: 260px;
-
+.donut_graph {
+    font-family: 'robotolight',arial, sans-serif;
 }
 
 .donut_graph .circle{
