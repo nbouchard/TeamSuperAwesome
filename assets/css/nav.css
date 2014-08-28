@@ -1,0 +1,379 @@
+@charset "UTF-8";
+body {padding-top: 90px;
+}
+.navbar {
+	padding: 0 0 0 10px;
+	min-height: 40px;
+}
+
+.navbar-inverse .navbar-brand {
+	margin: 5px 20px 5px 10px;
+	padding: 0;
+	width: 32px;
+	height: 38px;
+	color: #FFF;
+}
+
+.vr-Logo-path{fill:#FFFFFF;} /* svg logo fill */
+
+.navbar-inverse {
+	background: rgb(153,153,153);
+	background: -moz-linear-gradient(top,  rgba(153,153,153,1) 0%, rgba(102,102,102,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,153,153,1)), color-stop(100%,rgba(102,102,102,1)));
+	background: -webkit-linear-gradient(top,  rgba(153,153,153,1) 0%,rgba(102,102,102,1) 100%);
+	background: -o-linear-gradient(top,  rgba(153,153,153,1) 0%,rgba(102,102,102,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(153,153,153,1) 0%,rgba(102,102,102,1) 100%);
+	background: linear-gradient(to bottom,  rgba(153,153,153,1) 0%,rgba(102,102,102,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#666666',GradientType=0 );
+	border: none;
+}
+.primaryNav li {position: relative;}
+.primaryNav li:hover {background: #666666;box-shadow: inset 0 0 10px rgba(0,0,0,0.1);}
+.primaryNav li:last-child {margin-left: -1px;}
+.primaryNav li:before,
+.primaryNav li:after, 
+.upgradeBtn:before {
+	content: "";
+	width: 1px;
+	height: 54px;
+	background: rgba(255,255,255,0.20);
+	display: block;
+	position: absolute;
+	top: 0;
+}
+.primaryNav li:before,
+.upgradeBtn:before {left: 1px;}
+.primaryNav li:after {right: 1px;}
+
+.primaryNav a:before,
+.primaryNav a:after,
+.upgradeBtn a:before {
+	content: "";
+	width: 1px;
+	height: 54px;
+	background: rgba(0,0,0,0.10);
+	display: block;
+	position: absolute;
+	top:0;
+}
+.primaryNav a:before,
+.upgradeBtn a:before {left: 0px;}
+.primaryNav a:after {right: 0px;}
+.primaryNav li:first-child:after,
+.primaryNav li:first-child a:after  {background:none;}
+.primaryNav li:hover:before,
+.primaryNav li:hover:after {
+	background: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+  float: none;
+  padding: 17px 20px 12px 20px;
+  display: block;
+  line-height: 24px;
+  font-size: 24px;
+  font-family: 'brandon_grotesque';
+  color: #FFF;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+	background-color: rgb(102,102,102);
+  	box-shadow: inset 0px 0px 8px rgba(34,34,34,0.5);
+}
+.accountIcon,
+.helpIcon {
+	margin: 0px;
+	padding: 12px 5px!important;
+}
+.helpIcon {
+	margin: 0px 20px 0 0;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+background-color: transparent;
+}
+.upgradeBtn {
+	background-image: linear-gradient(rgba(128,204,0,0.5) 0%,rgba(51,171,38,0.5) 98%);
+	border-right: none;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	border-top-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 120%;
+	color: #f8f6f2;
+	text-align: left;
+}
+.upgradeBtn:before {
+	content: "";
+	width: 1px;
+	height: 54px;
+	background: rgba(255,255,255,0.20);
+	display: block;
+	position: absolute;
+	top: 0;
+}
+.primaryNav li:after {right: 1px;}
+.upgradeBtn a:before {
+	content: "";
+	width: 1px;
+	height: 54px;
+	background: rgba(0,0,0,0.25);
+	display: block;
+	position: absolute;
+	top:0;
+}
+
+/* reseller */
+.navbar-right > li > a {
+	padding: 14px 10px 8px 10px;
+	margin: 0 10px;
+}
+.navbar-right > li > a svg {
+	display: block;
+	margin: 0 auto 2px auto;
+}
+.navbar-right > li > a .svgPath {
+	fill: #BfBfBf;
+	margin-bottom: 5px;
+}
+.navbar-right > li > a .iconText {
+	color: #909090;
+	font-family: 'brandon_grotesque', arial, sans-serif;
+	font-size: 11px;
+	line-height: 10px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+.upgradeNav svg {
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+}
+.navbar-right > li.active a {background: none!important;}
+.alertNav.hasAlerts .svgPath {
+	fill: #FF6F02;
+}
+.alertNav.hasAlerts .iconText {
+	color: #FF6F02;
+}
+.helpNav:hover .svgPath,
+.helpNav.active .svgPath,
+.accountNav:hover .svgPath {
+	fill: #8430A6;
+}
+.helpNav:hover .iconText ,
+.helpNav.active .iconText ,
+.accountNav:hover .iconText {
+	color: #8430A6;
+}
+.upgradeNav:hover .svgPath {
+	fill: #3fae29;
+}
+.upgradeNav:hover .iconText {
+	color: #3fae29;
+}
+.navbar-default {
+	background-color: #FFFFFF;
+	border-color: #e7e7e7;
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.navbar-brand {
+	max-width: 200px;
+	padding: 15px;
+	margin: 0 40px 0 0;
+	/*height: auto;
+	max-width: 300px;*/
+	/*max-height: 50px;*/
+}
+.navbar-brand img {
+	max-height: 40px;
+	width: auto;
+}
+
+.navbar-default .navbar-nav.mainNav > li > a {
+	line-height: 24px;
+	font-family: 'brandon_light';
+	font-size: 24px;
+	color: #818181;
+	margin: 0px 10px 0 0;
+	padding: 20px 10px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a.current {
+	/*border-radius: 4px;*/
+ }
+.navbar-default .navbar-nav.mainNav > li > a:hover {
+	color: #8430a6;
+	border-bottom: 2px solid #8430a6;
+	padding-bottom: 18px;
+	background: #f9f9f9;
+}
+.navbar-default .navbar-nav.mainNav > li > a.current {
+	color: #8430a6;
+	border-bottom: 4px solid #8430a6;
+	padding-bottom: 16px;
+}
+
+.navbar-default .navbar-nav .upgradeNav a:hover {
+	color: #3fae29;
+}
+.accountIcons {
+	padding: 0px!important;
+	margin: 10px;
+}
+.navbar-nav > li > .accountIcons:hover {
+	background: transparent!important;
+ }
+.accountInfo {
+	background: #8430A6;
+	color: #FFF;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+.navbar-nav > li > .dropdown-menu,
+.dropdown-menu {
+	width: 300px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-radius: 4px;
+	border: 1px solid #8430A6;
+	border-radius: 6px;
+}
+
+.dropdown-menu:before {
+	content: '';
+	display: inline-block;
+	border-left: 12px solid rgba(0, 0, 0, 0);
+	border-right: 12px solid rgba(0, 0, 0, 0);
+	border-bottom: 12px solid #CCC;
+	border-bottom-color: #8430A6;
+	position: absolute;
+	top: -12px;
+	right: 32px;
+}
+.accountNav .dropdown-menu:before {right: 32px;}
+.helpNav .dropdown-menu:before {right: 21px;}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+}
+.dropdown-menu > li > a {
+	padding: 5px 20px 5px;
+	white-space: normal;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	color: #8430A6;
+	background-color: #F5F5F5;
+}
+.dropdown-menu > li > .logOut {
+	text-align: right;
+}
+.dropdown-menu > li:last-child > a {
+	border-radius: 0 0 5px 5px;
+}
+.dropdown-menu .divider {
+	margin: 0;
+}
+.dropdown-menu .userId,
+.dropdown-menu .acountSummary {
+	display: block;
+	padding: 5px 20px 0px;
+}
+.dropdown-menu .userId {
+	padding: 5px 20px 0px;
+	font-family: 'brandon_grotesque', sans-serif;
+	font-size: 16px;
+}
+.dropdown-menu .acountSummary {padding: 0px 20px 5px;}
+.helpTitle {
+	display: block;
+	padding: 5px 20px 5px;
+	background: #8430A6;
+	color: #FFF;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+/* Showing current state for Profile and upgrade btns */
+.upgradePage .upgradeNav a, 
+.profilePage .accountNav a.dropdown-toggle {
+	padding-bottom: 4px;
+}
+.profilePage .accountNav a.dropdown-toggle {
+	border-bottom: 4px solid #8430A6;
+}
+.upgradePage .upgradeNav a {
+		border-bottom: 4px solid #3fae29;
+}
+.upgradePage .navbar-right > .upgradeNav  > a .svgPath {
+	fill: #3fae29;
+}
+.profilePage .navbar-right > .accountNav > a .svgPath {
+	fill: #8430A6;
+}
+.upgradePage .navbar-default .navbar-nav .upgradeNav a .iconText {
+	color: #3fae29;
+}
+.profilePage .navbar-default .navbar-nav .accountNav a .iconText {
+	color: #8430A6;
+}
+
+/* Alerts dropdown styling */
+
+.alertListName {
+	font-weight: bold;
+	color: #8430A6;
+}
+.dropdown-menu li {
+	position: relative;
+}
+.alertNav .dropdown-menu > li > a {
+padding: 5px 30px 5px;
+}
+.alertNav .dropdown-menu .success a:before {
+	content: "\f00c";
+	font-size: 12px;
+	color: #3FAE29;
+	display:inline-block;
+	font-family: FontAwesome;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+.alertNav .dropdown-menu .success a:after {
+	content: "\f057";
+	font-size: 18px;
+	color: #E0E0E0;
+	display:inline-block;
+	font-family: FontAwesome;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+.alertNav .dropdown-menu .success a:hover:after {
+	color: #B9B9B9;
+}
+.alertNav .dropdown-menu .error a:before {
+	content: "\f06a";
+	font-size: 12px;
+	color: #3FAE29;
+	display:inline-block;
+	font-family: FontAwesome;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+.alertNav .dropdown-menu > .read > a,
+.alertNav .dropdown-menu .read a:before,
+.alertNav .dropdown-menu > .read > a .alertListName {
+	color: #CCCCCC;
+}

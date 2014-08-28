@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Compare Messages Tool</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://i.icomoon.io/public/b82cee61ad/standardIconSet/style.css">
+</head>
+
+<body class="hackathon">
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logos/logo.svg" width="28" height="32" alt="VerticalReaponse" />
+                    <!--<img src="assets/img/logos/deluxe-logo.svg"  width="41" height="32" alt=""/>-->
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="resellerNav">
+                <ul class="nav navbar-nav mainNav">
+                    <li><a href="ar-popover.html" class="current">Messages</a>
+                    </li>
+                    <li><a href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="accountNav dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="svgIcon">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="20px" viewBox="0 0 26 20" enable-background="new 0 0 26 20" xml:space="preserve">
+                                    <path class="svgPath" d="M25.629,17.791c-0.55-2.857-8.121-2.553-9.946-4.791c-0.385-0.472-0.385-0.472-0.127-2.226
+                    c0.44-1.963,0.84-0.745,1.469-4.66C17.554,2.825,16.426,0,13,0S8.446,2.825,8.974,6.114c0.63,3.915,1.029,2.697,1.469,4.66
+                    c0.258,1.754,0.258,1.754-0.127,2.226c-1.825,2.238-9.396,1.934-9.946,4.791C0.306,18.129,0,20,0,20h26
+                    C26,20,25.694,18.129,25.629,17.791z" />
+                                </svg>
+                            </div>
+                            <!-- /svgIcon -->
+                            <span class="iconText">Profile</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="accountInfo">
+                                <span class="userId">nkovacevich@verticalresponse.com</span>
+                                <span class="acountSummary">Free Plan + up to 1,000 email contacts</span>
+                            </li>
+                            <li><a href="#">Edit My Contact Info</a>
+                            </li>
+                            <li><a href="#">Social Accounts</a>
+                            </li>
+                            <li><a href="#">Default Email Settings</a>
+                            </li>
+                            <li><a href="#">Custom Fields</a>
+                            </li>
+                            <li><a href="#">Billing History</a>
+                            </li>
+                            <li><a href="#">Admin</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a class="logOut" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!-- AlertIcon -->
+                    <li class="alertNav dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="svgIcon">
+                                <svg version="1.1" id="alert" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="20px" viewBox="0 0 18 20" enable-background="new 0 0 18 20" xml:space="preserve">
+                                    <path class="svgPath" d="M9,16.585H0l1.556-2.548c0.544-0.892,1.316-2.451,1.446-3.483l0.575-6.335
+                            c0.13-1.032,1.065-2.07,2.087-2.318l1.751-0.424C7.467,0.654,8.153,0,9,0c0.847,0,1.533,0.654,1.586,1.478l1.75,0.424
+                            c1.023,0.247,1.957,1.285,2.088,2.318l0.574,6.335c0.13,1.032,0.901,2.592,1.446,3.483L18,16.586L9,16.585L9,16.585z M6.497,17.337
+                            c-0.004,0.059-0.018,0.114-0.018,0.173C6.48,18.885,7.608,20,9,20c1.392,0,2.521-1.115,2.521-2.491c0-0.059-0.014-0.114-0.018-0.173
+                            H6.497z" />
+                                </svg>
+                            </div>
+                            <!-- /svgIcon -->
+                            <span class="iconText">4 Alerts</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="helpTitle">Your Alerts</li>
+                            <li class="success"><a href="#">
+                your list <span class="alertListName">"Customer Contacts"</span> was uploaded successfully
+                </a>
+                            </li>
+                            <li class="success"><a href="#">
+                your list <span class="alertListName">"Prospects"</span> was uploaded successfully
+                </a>
+                            </li>
+                            <li class="success read"><a href="">
+                your list <span class="alertListName">"Competitor's Customers"</span> was uploaded successfully
+                </a>
+                            </li>
+                            <li class="success read"><a href="">
+                your list <span class="alertListName">"OxiClean Shoppers"</span> was uploaded successfully
+                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /AlertsIcon -->
+
+
+
+
+
+                    <!-- helpIcon -->
+                    <li class="helpNav dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="svgIcon">
+                                <svg version="1.1" id="help" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="20px" viewBox="0 0 14 20" enable-background="new 0 0 14 20" xml:space="preserve">
+                                    <g>
+                                        <path class="svgPath" d="M8.583,14.895H5.191c-0.009-0.495-0.013-0.797-0.013-0.905c0-1.116,0.182-2.035,0.546-2.755
+                                c0.364-0.72,1.09-1.53,2.182-2.431s1.743-1.49,1.956-1.769c0.328-0.441,0.492-0.927,0.492-1.458c0-0.738-0.288-1.371-0.87-1.897
+                                C8.903,3.153,8.117,2.89,7.133,2.89c-0.948,0-1.742,0.275-2.381,0.824S3.673,5.1,3.434,6.226L0,5.793
+                                c0.098-1.612,0.774-2.98,2.03-4.105S4.933,0,6.973,0c2.147,0,3.855,0.569,5.124,1.708S14,4.173,14,5.685
+                                c0,0.837-0.231,1.63-0.697,2.377s-1.464,1.765-2.99,3.052c-0.79,0.666-1.278,1.202-1.468,1.607
+                                C8.654,13.126,8.565,13.851,8.583,14.895z M5.191,20v-3.795h3.739V20H5.191z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <!-- /svgIcon -->
+                            <span class="iconText">Help</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="helpTitle">Help Options</li>
+                            <li><a href="#">Help for this page</a>
+                            </li>
+                            <li><a href="#">Support &amp; Feedback</a>
+                            </li>
+                            <li><a href="#">Policies &amp; Terms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /helpIcon -->
+
+
+
+
+                    <li class="upgradeNav">
+                        <a href="#">
+                            <div class="svgIcon">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                                    <g>
+                                        <path class="svgPath" d="M10,20C4.479,20,0,15.521,0,10S4.479,0,10,0s10,4.479,10,10S15.521,20,10,20z M2.917,10
+                            c0,3.907,3.177,7.083,7.083,7.083s7.083-3.177,7.083-7.083S13.907,2.917,10,2.917S2.917,6.093,2.917,10z M14.167,10h-2.5v4.583
+                            c0,0.234-0.182,0.417-0.417,0.417h-2.5c-0.234,0-0.417-0.182-0.417-0.417V10h-2.5c-0.234,0-0.417-0.182-0.417-0.417
+                            c0-0.117,0.052-0.221,0.13-0.312L9.7,5.117C9.791,5.039,9.896,5,10,5s0.209,0.039,0.3,0.117l4.167,4.167
+                            c0.117,0.131,0.156,0.3,0.091,0.457C14.492,9.896,14.336,10,14.167,10z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <!-- /svgIcon -->
+                            <span class="iconText">Upgrade</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Page title</h1>
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-sm-6">
+                select email dropdown
+            </div>
+            <div class="col-sm-6">
+                select email drop down
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div style="background: #eeeeee; display:block; padding: 100px 20px; margin: 20px 0px; text-align: center;">Big Ass Graph, son</div>
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-sm-6">
+                message details
+            </div>
+            <div class="col-sm-6">
+                message details
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-sm-6">
+                <h5>Graph Column</h5>
+                <div class="row">
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                </div><!-- /inner row -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                </div><!-- /inner row -->
+            </div><!-- /col-sm-6 -->
+            <div class="col-sm-6">
+                <h5>Graph Column</h5>
+                <div class="row">
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                </div><!-- /inner row -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                    <div class="col-sm-6">
+                        Graph
+                    </div>
+                </div><!-- /inner row -->
+            </div><!-- /col-sm-6 -->
+        </div>
+        <!-- /row -->
+         <div class="row">
+            <div class="col-sm-6">
+                Summary
+            </div>
+            <div class="col-sm-6">
+                Summary
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /.container -->
+
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

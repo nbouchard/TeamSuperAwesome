@@ -1,0 +1,314 @@
+@charset "UTF-8";
+ body {
+    color: #333;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../font/roboto-light-webfont.eot');
+    src: url('../font/roboto-light-webfont.eot?#iefix') format('embedded-opentype'), url('../font/roboto-light-webfont.woff') format('woff'), url('../font/roboto-light-webfont.ttf') format('truetype'), url('../font/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'brandon_light';
+    src: url('../font/brandon_light-webfont.eot');
+    src: url('../font/brandon_light-webfont.eot?#iefix') format('embedded-opentype'), url('../font/brandon_light-webfont.woff') format('woff'), url('../font/brandon_light-webfont.ttf') format('truetype'), url('../font/brandon_light-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'brandon_grotesque';
+    src: url('../font/brandon_reg-webfont.eot');
+    src: url('../font/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'), url('../font/brandon_reg-webfont.woff') format('woff'), url('../font/brandon_reg-webfont.ttf') format('truetype'), url('../font/brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tisa';
+    src: url('../font/tisaot-webfont.eot');
+    src: url('../font/tisaot-webfont.eot?#iefix') format('embedded-opentype'), url('../font/tisaot-webfont.woff') format('woff'), url('../font/tisaot-webfont.ttf') format('truetype'), url('../font/tisaot-webfont.svg#tisaotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url('../font/icomoon.eot?o4fhuq');
+    src: url('../font/icomoon.eot?#iefixo4fhuq') format('embedded-opentype'), url('../font/icomoon.woff?o4fhuq') format('woff'), url('../font/icomoon.ttf?o4fhuq') format('truetype'), url('../font/icomoon.svg?o4fhuq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-list:before {
+    content: "\e611";
+}
+.icon-check2:before {
+    content: "\e60e";
+}
+.icon-ok:before {
+    content: "\e612";
+}
+.modal-content {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.btn-primaryAction {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px 16px;
+    font-family: 'brandon', arial, sans-serif;
+    background: #21A800;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-variant: normal;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.btn-primaryAction:hover {
+    background: #1C8F00;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.btn-primaryAction:active {
+    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-primaryActionLarge, .btn-primaryActionLarge:focus {
+    color: #097e09;
+    background: transparent;
+    font-size: 24px;
+    padding: 20px;
+    font-family: 'brandon', arial, sans-serif;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    text-shadow: none;
+    border: 1px solid #097e09;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-variant: normal;
+}
+.btn-primaryActionLarge:hover, .btn-primaryActionLarge.active, .btn-primaryActionLarge.active:focus {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);
+    background: #80cc00;
+    background: -moz-linear-gradient(top, #80cc00 0%, #33ab26 97%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #80cc00), color-stop(97%, #33ab26));
+    background: -webkit-linear-gradient(top, #80cc00 0%, #33ab26 97%);
+    background: -o-linear-gradient(top, #80cc00 0%, #33ab26 97%);
+    background: -ms-linear-gradient(top, #80cc00 0%, #33ab26 97%);
+    background: linear-gradient(to bottom, #80cc00 0%, #33ab26 97%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80cc00', endColorstr='#33ab26', GradientType=0);
+}
+.btn-Regular {
+    padding: 10px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #484848;
+    background-color: #fff;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-Regular:hover {
+    border-color: #8430a6;
+    color: #8430a6;
+    text-decoration: none;
+}
+.btn-Regular.active, .btn-Regular:active, .btn-Regular.active:focus, .btn.btn-Regular.active, .btn.btn-Regular:active, .btn.btn-Regular.active:focus {
+    background: #8430a6;
+    color: #FFFFFF;
+    border-color: #45296c;
+}
+.btn-upgradePro {
+    color: #ff6b0b;
+    border-color: #ff6b0b;
+    background-color: transparent;
+    font-family: arial, sans-serif;
+    margin: 0 0 4px 10px;
+    font-weight: bold;
+}
+.btn-upgradePro:hover {
+    color: #ffffff;
+    background: #ff6b0b;
+    font-family: arial, sans-serif;
+    margin: 0 0 4px 10px;
+}
+.lateralSelector .btn {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    border-radius: 4px;
+}
+.lateralSelector .btn:hover {
+    border-color: #8430a6;
+}
+.lateralSelector .active, .lateralSelector .active:focus {
+    background: #8430a6;
+    color: #FFFFFF;
+    border-color: #45296c;
+}
+/* Messages placeholder bg */
+
+.sampleBg {
+    margin: 0 auto;
+}
+/* Modals */
+
+.resellerDemo .modal-dialog {
+    width: 600px;
+}
+.modal-content {
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+}
+.modal-header {
+    min-height: 16.428571429px;
+    padding: 14px;
+    border-bottom: none;
+    background: #6F1795;
+    border-radius: 4px 4px 0 0;
+}
+.modal-title {
+    font-family: 'brandon_light', arial, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 1;
+}
+.modal-footer {
+    padding: 0px 20px 20px;
+    margin-top: 0px;
+    border-top: none;
+}
+.modal-footer .cancel {
+    font-size: 16px;
+    color: #818181;
+}
+.modal .close {
+    /* text-shadow: 0 1px 0 #FFF; */
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+.modal .close .closeCircle {
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.modal .close:hover .closeCircle {
+    fill: #450E5D;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.modal-body {
+    padding: 30px;
+}
+.modalCallBack .modal-body {
+    padding-bottom: 10px;
+}
+.modal-body p, .modal .media-body p {
+    color: #444444;
+    font-size: 22px;
+}
+.modal .media-body .subInfo {
+    color: #818181;
+    font-size: 16px;
+}
+.modal .modal-body h4, .modal .modal-footer h4 {
+    font-family: 'roboto-meduim', arial, sans-serif;
+    color: #444444;
+    font-size: 18px;
+}
+.modal .media-heading {
+    font-family: 'roboto', arial, sans-serif;
+    color: #6F1795;
+    font-size: 27px;
+}
+/* Success Messaging */
+
+.successMessage {
+    width: 475px;
+    margin: 40px auto 0;
+}
+.successMessage h1 {
+    font-family: 'brandon_light';
+    font-size: 40px;
+    margin: 0 0 30px 0;
+}
+.successMessage h1 .type {
+    color: #818181;
+}
+.successMessage h1 .success {
+    color: #3FAE29;
+}
+.successMessage h1 .icon-check2 {
+    font-size: 43px;
+    position: relative;
+    top: 5px;
+}
+.successMessage p {
+    font-family: 'tisa';
+    font-size: 18px;
+    color: #333333;
+}
+.successMessage p .time {
+    color: #6F1795;
+}
+/* Boostrap Select - custom select dropdown styling */
+
+.bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="span"] {
+    margin: 10px 0;
+}
+.bootstrap-select .btn-default:hover, .bootstrap-select .btn-default:focus, .bootstrap-select .btn-default:active, .bootstrap-select .btn-default.active, .bootstrap-select .open .dropdown-toggle.btn-default {
+    color: #8430a6;
+    background-color: transparent;
+    border-color: #8430a6;
+}
+.bootstrap-select .btn-default:hover .caret, .bootstrap-select .btn-default:focus .caret, .bootstrap-select .btn-default:active .caret, .bootstrap-select .btn-default.active .caret, .bootstrap-select .open .dropdown-toggle.btn-default .caret {
+    border-top-color: #8430A6;
+}
+/* modal select overide */
+
+.specialPicker .media, .specialPicker .media .media-body {
+    overflow-y: visible!important;
+}
+.specialPicker .art {
+    float: left;
+    margin: 0 20px 107px
+}
+.specialPicker .art .icon-list {
+    font-size: 67px;
+    color: #808080;
+}
+.specialPicker .content {
+    margin: 0 0 20px 0
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark {
+    margin-top: 6.5px;
+}
