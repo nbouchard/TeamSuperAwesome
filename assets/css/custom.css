@@ -329,7 +329,9 @@ h1 .pageType {
 }
 
 /* Hackathon styles */
-
+.footer {
+    padding: 20px;
+}
 .graphsRow {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -355,4 +357,13 @@ h1 .pageType {
 
 .summary .dataCategory {
     color: #8430A6;
+}
+.messageThumbnail {
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767px) {
+  .email1 {
+    margin-bottom:50px;
+  }
 }
