@@ -8,7 +8,6 @@ var comparisonGraph = c3.generate({
         types: {
             data1: 'area-spline',
             data2: 'area-spline'
-        },
-        groups: [['data1', 'data2']]
+        }
     }
 });
