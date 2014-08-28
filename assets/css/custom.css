@@ -30,7 +30,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
+/*@font-face {
     font-family: 'icomoon';
     src: url('../font/icomoon.eot?o4fhuq');
     src: url('../font/icomoon.eot?#iefixo4fhuq') format('embedded-opentype'), url('../font/icomoon.woff?o4fhuq') format('woff'), url('../font/icomoon.ttf?o4fhuq') format('truetype'), url('../font/icomoon.svg?o4fhuq#icomoon') format('svg');
@@ -45,10 +45,10 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    /* Better Font Rendering =========== */
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+}*/
 .icon-list:before {
     content: "\e611";
 }
@@ -61,6 +61,21 @@
 .modal-content {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+h1 {
+    font-family: 'brandon_light', arial, sans-serif;
+    color: #666666;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+h1 .pageCategory {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    display: block;
+    margin: 0 0 5px 0;
+}
+h1 .pageType {
+    color: #8430A6;
 }
 .btn-primaryAction {
     color: #FFFFFF;
@@ -311,4 +326,33 @@
 }
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark {
     margin-top: 6.5px;
+}
+
+/* Hackathon styles */
+
+.graphsRow {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.dataCategory {
+    font-family: arial, sans-serif;
+    color: #999999;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+.dataContent {
+    font-family: 'tisa',arial, sans-serif;
+    color: #444444;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+.dataContent .listSize {
+    font-family: arial, sans-serif;
+    color: #ff6b0b;
+    font-size:  14px;
+}
+
+.summary .dataCategory {
+    color: #8430A6;
 }
